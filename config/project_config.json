@@ -1,0 +1,18 @@
+{
+  "project_number": 9,
+  "project_name": "AI Attrition Prediction & Explainability",
+  "random_seed": 42,
+  "modeling_grain": "one synthetic employee as of snapshot_date",
+  "target": "attrition_within_90_days",
+  "prediction_horizon_days": 90,
+  "date_column": "snapshot_date",
+  "id_column": "employee_id",
+  "train_end": "2025-12-31",
+  "validation_start": "2026-01-01",
+  "validation_end": "2026-03-31",
+  "test_start": "2026-04-01",
+  "test_end": "2026-06-30",
+  "minimum_subgroup_size": 50,
+  "default_threshold_for_baseline_only": 0.5,
+  "synthetic_data_only": true
+}

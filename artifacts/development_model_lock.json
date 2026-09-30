@@ -1,0 +1,13 @@
+{
+  "model_name": "GradientBoostingClassifier",
+  "model_label": "Gradient Boosting",
+  "selection_basis": "Validation model comparison plus maximum-F1 threshold rule",
+  "operating_threshold": 0.125,
+  "calibration_method": null,
+  "hyperparameter_tuning_performed": false,
+  "class_weighting_used": false,
+  "threshold_selected_on": "validation",
+  "test_used_for_selection": false,
+  "random_seed": 42,
+  "status": "LOCKED_BEFORE_FINAL_TEST"
+}

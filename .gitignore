@@ -1,0 +1,31 @@
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
+
+# Large/reproducible row-level analytical outputs
+outputs/final_test_predictions.csv
+outputs/validation_error_analysis.csv
+outputs/validation_shap_values.csv
+outputs/validation_shap_local_examples.csv

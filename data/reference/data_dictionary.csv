@@ -1,0 +1,27 @@
+column,dtype,grain_note
+employee_id,object,One row per synthetic employee as of snapshot date
+snapshot_date,object,One row per synthetic employee as of snapshot date
+department,object,One row per synthetic employee as of snapshot date
+job_family,object,One row per synthetic employee as of snapshot date
+job_level,object,One row per synthetic employee as of snapshot date
+location,object,One row per synthetic employee as of snapshot date
+employment_type,object,One row per synthetic employee as of snapshot date
+age,int64,One row per synthetic employee as of snapshot date
+tenure_months,int64,One row per synthetic employee as of snapshot date
+monthly_salary_annualized,float64,One row per synthetic employee as of snapshot date
+overtime_hours_90d,float64,One row per synthetic employee as of snapshot date
+absences_90d,int64,One row per synthetic employee as of snapshot date
+performance_score,float64,One row per synthetic employee as of snapshot date
+engagement_score,float64,One row per synthetic employee as of snapshot date
+manager_changes_12m,int64,One row per synthetic employee as of snapshot date
+months_since_promotion,int64,One row per synthetic employee as of snapshot date
+commute_minutes,int64,One row per synthetic employee as of snapshot date
+training_hours_12m,float64,One row per synthetic employee as of snapshot date
+remote_work_ratio,float64,One row per synthetic employee as of snapshot date
+salary_change_pct_12m,float64,One row per synthetic employee as of snapshot date
+internal_moves_24m,int64,One row per synthetic employee as of snapshot date
+attrition_within_90_days,int64,One row per synthetic employee as of snapshot date
+termination_date,object,One row per synthetic employee as of snapshot date
+termination_reason,object,One row per synthetic employee as of snapshot date
+exit_interview_complete,int64,One row per synthetic employee as of snapshot date
+final_pay_indicator,int64,One row per synthetic employee as of snapshot date

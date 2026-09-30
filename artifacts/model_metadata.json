@@ -1,0 +1,112 @@
+{
+  "project": "09_ai_attrition_prediction",
+  "artifact_type": "final_evaluated_model",
+  "model_name": "GradientBoostingClassifier",
+  "model_label": "Gradient Boosting",
+  "model_parameters": {
+    "ccp_alpha": 0.0,
+    "criterion": "friedman_mse",
+    "init": null,
+    "learning_rate": 0.1,
+    "loss": "log_loss",
+    "max_depth": 3,
+    "max_features": null,
+    "max_leaf_nodes": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 1,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "n_estimators": 100,
+    "n_iter_no_change": null,
+    "random_state": 42,
+    "subsample": 1.0,
+    "tol": 0.0001,
+    "validation_fraction": 0.1,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "operating_threshold": 0.125,
+  "threshold_selected_on": "validation",
+  "target": "attrition_within_90_days",
+  "prediction_horizon_days": 90,
+  "random_seed": 42,
+  "feature_count": 19,
+  "feature_list": [
+    "department",
+    "job_family",
+    "job_level",
+    "location",
+    "employment_type",
+    "age",
+    "tenure_months",
+    "monthly_salary_annualized",
+    "overtime_hours_90d",
+    "absences_90d",
+    "performance_score",
+    "engagement_score",
+    "manager_changes_12m",
+    "months_since_promotion",
+    "commute_minutes",
+    "training_hours_12m",
+    "remote_work_ratio",
+    "salary_change_pct_12m",
+    "internal_moves_24m"
+  ],
+  "excluded_feature_count": 7,
+  "excluded_feature_list": [
+    "employee_id",
+    "snapshot_date",
+    "attrition_within_90_days",
+    "termination_date",
+    "termination_reason",
+    "exit_interview_complete",
+    "final_pay_indicator"
+  ],
+  "splits": {
+    "train": {
+      "start": "2025-01-01 00:00:00",
+      "end": "2025-12-01 00:00:00",
+      "rows": 1997
+    },
+    "validation": {
+      "start": "2026-01-01 00:00:00",
+      "end": "2026-03-01 00:00:00",
+      "rows": 496
+    },
+    "test": {
+      "start": "2026-04-01 00:00:00",
+      "end": "2026-06-01 00:00:00",
+      "rows": 507
+    }
+  },
+  "dataset_file": "data/raw/employee_attrition_snapshots_synthetic.csv",
+  "model_file": "artifacts\\final_model_pipeline.joblib",
+  "model_sha256": "12f9c529ecaffe70f8c1ad401ab398e25b135d8a5ecab6edd71584d65a126755",
+  "final_test_metrics": {
+    "row_count": 507,
+    "target_prevalence": 0.09861932938856016,
+    "threshold": 0.125,
+    "predicted_positive_count": 118,
+    "predicted_positive_rate": 0.23274161735700197,
+    "roc_auc": 0.6156236323851203,
+    "pr_auc": 0.19942038019456926,
+    "brier_score": 0.08718630417497854,
+    "precision": 0.16101694915254236,
+    "recall": 0.38,
+    "f1": 0.2261904761904762,
+    "true_negative": 358,
+    "false_positive": 99,
+    "false_negative": 31,
+    "true_positive": 19
+  },
+  "library_versions": {
+    "python": "3.10.11",
+    "numpy": "1.26.4",
+    "pandas": "1.5.3",
+    "scikit_learn": "1.7.2",
+    "joblib": "1.5.3"
+  },
+  "metadata_created_utc": "2026-09-29T19:56:33.346680+00:00",
+  "test_used_for_model_selection": false,
+  "synthetic_data_only": true
+}

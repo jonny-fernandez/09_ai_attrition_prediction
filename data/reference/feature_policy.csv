@@ -1,0 +1,27 @@
+column,policy,reason
+employee_id,EXCLUDED_IDENTIFIER,Synthetic identifier; never a model feature.
+snapshot_date,SPLIT_ONLY,Defines prediction time and chronological split; not used as raw feature.
+department,ALLOWED,Synthetic feature available as of snapshot date.
+job_family,ALLOWED,Synthetic feature available as of snapshot date.
+job_level,ALLOWED,Synthetic feature available as of snapshot date.
+location,ALLOWED,Synthetic feature available as of snapshot date.
+employment_type,ALLOWED,Synthetic feature available as of snapshot date.
+age,ALLOWED,Synthetic feature available as of snapshot date.
+tenure_months,ALLOWED,Synthetic feature available as of snapshot date.
+monthly_salary_annualized,ALLOWED,Synthetic feature available as of snapshot date.
+overtime_hours_90d,ALLOWED,Synthetic feature available as of snapshot date.
+absences_90d,ALLOWED,Synthetic feature available as of snapshot date.
+performance_score,ALLOWED,Synthetic feature available as of snapshot date.
+engagement_score,ALLOWED,Synthetic feature available as of snapshot date.
+manager_changes_12m,ALLOWED,Synthetic feature available as of snapshot date.
+months_since_promotion,ALLOWED,Synthetic feature available as of snapshot date.
+commute_minutes,ALLOWED,Synthetic feature available as of snapshot date.
+training_hours_12m,ALLOWED,Synthetic feature available as of snapshot date.
+remote_work_ratio,ALLOWED,Synthetic feature available as of snapshot date.
+salary_change_pct_12m,ALLOWED,Synthetic feature available as of snapshot date.
+internal_moves_24m,ALLOWED,Synthetic feature available as of snapshot date.
+attrition_within_90_days,TARGET,Binary prediction target.
+termination_date,EXCLUDED_LEAKAGE,Only known after the outcome or directly reveals attrition.
+termination_reason,EXCLUDED_LEAKAGE,Only known after the outcome or directly reveals attrition.
+exit_interview_complete,EXCLUDED_LEAKAGE,Only known after the outcome or directly reveals attrition.
+final_pay_indicator,EXCLUDED_LEAKAGE,Only known after the outcome or directly reveals attrition.
